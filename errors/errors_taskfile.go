@@ -3,6 +3,7 @@ package errors
 import (
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 // TaskfileNotFoundError is returned when no appropriate Taskfile is found when
@@ -119,4 +120,20 @@ func (err *TaskfileCacheNotFound) Error() string {
 
 func (err *TaskfileCacheNotFound) Code() int {
 	return CodeTaskfileCacheNotFound
+}
+
+type TaskfileDuplicateIncludeError struct {
+	URI         string
+	IncludedURI string
+	Namespaces  []string
+}
+
+func (err *TaskfileDuplicateIncludeError) Error() string {
+	return fmt.Sprintf(
+		`task: Taskfile %q attempted to include %q multiple times with namespaces: %s`, err.URI, err.IncludedURI, strings.Join(err.Namespaces, ", "),
+	)
+}
+
+func (err *TaskfileDuplicateIncludeError) Code() int {
+	return CodeTaskfileDuplicateInclude
 }
