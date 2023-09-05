@@ -186,7 +186,7 @@ func (c *CompilerV3) getSpecialVars(t *taskfile.Task) (map[string]string, error)
 
 func (c *CompilerV3) getTaskfileDir(t *taskfile.Task) string {
 	if t.IncludedTaskfileDir != "" {
-		return t.IncludedTaskfileDir
+		return filepathext.SmartJoin(c.Dir, t.IncludedTaskfileDir)
 	}
 	return c.Dir
 }

@@ -139,11 +139,12 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 			}
 
 			mergeOptions := &taskfile.MergeOptions{
-				Namespace: namespace,
-				Dir:       includedTaskfile.Dir,
-				Internal:  includedTaskfile.Internal,
-				Aliases:   includedTaskfile.Aliases,
-				Vars:      includedTaskfile.Vars,
+				Namespace:      namespace,
+				Dir:            includedTaskfile.Dir,
+				Internal:       includedTaskfile.Internal,
+				Aliases:        includedTaskfile.Aliases,
+				Vars:           includedTaskfile.Vars,
+				AdvancedImport: includedTaskfile.AdvancedImport,
 			}
 
 			// Create an edge between the Taskfiles
