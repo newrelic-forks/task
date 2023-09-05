@@ -38,7 +38,7 @@ type Task struct {
 	Run                  string
 	IncludeVars          *Vars
 	IncludedTaskfileVars *Vars
-	IncludedTaskfile     *IncludedTaskfile
+	IncludedTaskfileDir  string
 	Platforms            []*Platform
 	Location             *Location
 }
@@ -178,7 +178,7 @@ func (t *Task) DeepCopy() *Task {
 		Run:                  t.Run,
 		IncludeVars:          t.IncludeVars.DeepCopy(),
 		IncludedTaskfileVars: t.IncludedTaskfileVars.DeepCopy(),
-		IncludedTaskfile:     t.IncludedTaskfile.DeepCopy(),
+		IncludedTaskfileDir:  t.IncludedTaskfileDir,
 		Platforms:            deepcopy.Slice(t.Platforms),
 		Location:             t.Location.DeepCopy(),
 		Requires:             t.Requires.DeepCopy(),

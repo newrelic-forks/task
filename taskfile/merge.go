@@ -7,11 +7,12 @@ import (
 )
 
 type MergeOptions struct {
-	Namespace string
-	Dir       string
-	Internal  bool
-	Aliases   []string
-	Vars      *Vars
+	Namespace      string
+	Dir            string
+	Internal       bool
+	Aliases        []string
+	Vars           *Vars
+	AdvancedImport bool
 }
 
 // ErrIncludedTaskfilesCantHaveDotenvs is returned when a included Taskfile contains dotenvs
@@ -43,7 +44,7 @@ func Merge(t1, t2 *Taskfile, opts *MergeOptions) error {
 	t1.Vars.Merge(t2.Vars)
 	t1.Env.Merge(t2.Env)
 
-	return t2.Tasks.Range(func(k string, v *Task) error {
+	if err := t2.Tasks.Range(func(k string, v *Task) error {
 		// We do a deep copy of the task struct here to ensure that no data can
 		// be changed elsewhere once the taskfile is merged.
 		task := v.DeepCopy()
@@ -84,19 +85,23 @@ func Merge(t1, t2 *Taskfile, opts *MergeOptions) error {
 		task.Task = taskNameWithNamespace
 		t1.Tasks.Set(taskNameWithNamespace, task)
 
-		// If the included Taskfile has a default task and the parent namespace has
-		// no task with a matching name, we can add an alias so that the user can
-		// run the included Taskfile's default task without specifying its full
-		// name. If the parent namespace has aliases, we add another alias for each
-		// of them.
-		if t2.Tasks.Get("default") != nil && t1.Tasks.Get(opts.Namespace) == nil {
-			defaultTaskName := fmt.Sprintf("%s:default", opts.Namespace)
-			t1.Tasks.Get(defaultTaskName).Aliases = append(t1.Tasks.Get(defaultTaskName).Aliases, opts.Namespace)
-			t1.Tasks.Get(defaultTaskName).Aliases = append(t1.Tasks.Get(defaultTaskName).Aliases, opts.Aliases...)
-		}
-
 		return nil
-	})
+	}); err != nil {
+		return err
+	}
+
+	// If the included Taskfile has a default task and the parent namespace has
+	// no task with a matching name, we can add an alias so that the user can
+	// run the included Taskfile's default task without specifying its full
+	// name. If the parent namespace has aliases, we add another alias for each
+	// of them.
+	if t2.Tasks.Get("default") != nil && t1.Tasks.Get(opts.Namespace) == nil {
+		defaultTaskName := fmt.Sprintf("%s:default", opts.Namespace)
+		t1.Tasks.Get(defaultTaskName).Aliases = append(t1.Tasks.Get(defaultTaskName).Aliases, opts.Namespace)
+		t1.Tasks.Get(defaultTaskName).Aliases = append(t1.Tasks.Get(defaultTaskName).Aliases, opts.Aliases...)
+	}
+
+	return nil
 }
 
 func taskNameWithNamespace(taskName string, namespace string) string {

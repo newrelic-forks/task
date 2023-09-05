@@ -175,23 +175,18 @@ func (c *CompilerV3) ResetCache() {
 }
 
 func (c *CompilerV3) getSpecialVars(t *taskfile.Task) (map[string]string, error) {
-	taskfileDir, err := c.getTaskfileDir(t)
-	if err != nil {
-		return nil, err
-	}
-
 	return map[string]string{
 		"TASK":             t.Task,
 		"ROOT_DIR":         c.Dir,
-		"TASKFILE_DIR":     taskfileDir,
+		"TASKFILE_DIR":     c.getTaskfileDir(t),
 		"USER_WORKING_DIR": c.UserWorkingDir,
 		"TASK_VERSION":     version.GetVersion(),
 	}, nil
 }
 
-func (c *CompilerV3) getTaskfileDir(t *taskfile.Task) (string, error) {
-	if t.IncludedTaskfile != nil {
-		return t.IncludedTaskfile.FullDirPath()
+func (c *CompilerV3) getTaskfileDir(t *taskfile.Task) string {
+	if t.IncludedTaskfileDir != "" {
+		return t.IncludedTaskfileDir
 	}
-	return c.Dir, nil
+	return c.Dir
 }

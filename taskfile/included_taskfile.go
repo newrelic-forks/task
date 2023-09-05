@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-task/task/v3/internal/execext"
-	"github.com/go-task/task/v3/internal/filepathext"
-
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
+
+	"github.com/go-task/task/v3/internal/execext"
+	"github.com/go-task/task/v3/internal/filepathext"
 )
 
 // IncludedTaskfile represents information about included taskfiles
@@ -140,21 +140,12 @@ func (it *IncludedTaskfile) DeepCopy() *IncludedTaskfile {
 
 // FullTaskfilePath returns the fully qualified path to the included taskfile
 func (it *IncludedTaskfile) FullTaskfilePath() (string, error) {
-	return it.resolvePath(it.Taskfile)
-}
-
-// FullDirPath returns the fully qualified path to the included taskfile's working directory
-func (it *IncludedTaskfile) FullDirPath() (string, error) {
-	return it.resolvePath(it.Dir)
-}
-
-func (it *IncludedTaskfile) resolvePath(path string) (string, error) {
 	// If the file is remote, we don't need to resolve the path
 	if strings.Contains(it.Taskfile, "://") {
-		return path, nil
+		return it.Taskfile, nil
 	}
 
-	path, err := execext.Expand(path)
+	path, err := execext.Expand(it.Taskfile)
 	if err != nil {
 		return "", err
 	}
