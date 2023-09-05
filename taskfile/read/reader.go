@@ -93,11 +93,11 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 	// TODO: Maybe move this somewhere else?
 	// Annotate any included Taskfile reference with a base directory for resolving relative paths
 	if node, isFileNode := node.(*FileNode); isFileNode {
-		_ = vertex.taskfile.Includes.Range(func(key string, includedFile taskfile.IncludedTaskfile) error {
+		_ = vertex.taskfile.Includes.Range(func(namespace string, includedFile taskfile.IncludedTaskfile) error {
 			// Set the base directory for resolving relative paths, but only if not already set
 			if includedFile.BaseDir == "" {
 				includedFile.BaseDir = node.Dir
-				vertex.taskfile.Includes.Set(key, includedFile)
+				vertex.taskfile.Includes.Set(namespace, includedFile)
 			}
 			return nil
 		})
@@ -107,7 +107,7 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 	var g errgroup.Group
 
 	// Loop over each included taskfile
-	vertex.taskfile.Includes.Range(func(key string, includedTaskfile taskfile.IncludedTaskfile) error {
+	vertex.taskfile.Includes.Range(func(namespace string, includedTaskfile taskfile.IncludedTaskfile) error {
 		// Start a goroutine to process each included Taskfile
 		g.Go(func() error {
 			// If the Taskfile schema is v3 or higher, replace all variables with their values
@@ -138,8 +138,16 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 				return err
 			}
 
+			mergeOptions := &taskfile.MergeOptions{
+				Namespace: namespace,
+				Dir:       includedTaskfile.Dir,
+				Internal:  includedTaskfile.Internal,
+				Aliases:   includedTaskfile.Aliases,
+				Vars:      includedTaskfile.Vars,
+			}
+
 			// Create an edge between the Taskfiles
-			return r.graph.AddEdge(node.Location(), includedTaskfileNode.Location())
+			return r.graph.AddEdge(node.Location(), includedTaskfileNode.Location(), graph.EdgeData(mergeOptions))
 		})
 		return nil
 	})

@@ -82,19 +82,22 @@ func (e *Executor) setCurrentDir() error {
 
 func (e *Executor) readTaskfile() error {
 	uri := filepath.Join(e.Dir, e.Entrypoint)
-	node, err := read.NewNode(uri, e.Insecure)
-	if err != nil {
-		return err
-	}
-	e.Taskfile, err = read.Taskfile(
-		node,
+	reader := read.NewReader(
+		uri,
 		e.Insecure,
 		e.Download,
 		e.Offline,
 		e.TempDir,
 		e.Logger,
 	)
+	graph, err := reader.Read()
 	if err != nil {
+		return err
+	}
+	if err := graph.Visualize("./taskfile-dag.gv"); err != nil {
+		return err
+	}
+	if e.Taskfile, err = graph.Merge(); err != nil {
 		return err
 	}
 	return nil
