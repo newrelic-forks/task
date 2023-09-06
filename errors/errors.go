@@ -18,6 +18,7 @@ const (
 	CodeTaskfileNotSecure
 	CodeTaskfileCacheNotFound
 	CodeTaskfileDuplicateInclude
+	CodeTaskfileCycle
 )
 
 // Task related exit codes

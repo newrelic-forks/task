@@ -160,6 +160,12 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 					Namespaces:  []string{namespace, edge.Properties.Data.(*taskfile.MergeOptions).Namespace},
 				}
 			}
+			if errors.Is(err, graph.ErrEdgeCreatesCycle) {
+				return errors.TaskfileCycleError{
+					Source:      node.Location(),
+					Destination: includedTaskfileNode.Location(),
+				}
+			}
 			return err
 		})
 		return nil
