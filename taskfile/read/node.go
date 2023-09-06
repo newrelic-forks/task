@@ -12,7 +12,6 @@ type Node interface {
 	Read(ctx context.Context) ([]byte, error)
 	Parent() Node
 	Location() string
-	Optional() bool
 	Remote() bool
 }
 

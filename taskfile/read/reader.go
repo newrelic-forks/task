@@ -84,9 +84,6 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 	var err error
 	vertex.taskfile, err = r.readNode(node)
 	if err != nil {
-		if node.Optional() {
-			return nil
-		}
 		return err
 	}
 
@@ -127,9 +124,11 @@ func (r *Reader) addIncludedTaskfiles(node Node) error {
 
 			includedTaskfileNode, err := NewNode(uri, r.insecure,
 				WithParent(node),
-				WithOptional(includedTaskfile.Optional),
 			)
 			if err != nil {
+				if includedTaskfile.Optional {
+					return nil
+				}
 				return err
 			}
 
