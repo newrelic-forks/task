@@ -104,7 +104,10 @@ func (dag *TaskfileGraph) Merge() (*taskfile.Taskfile, error) {
 					})
 					for _, task := range vertex.taskfile.Tasks.Values() {
 						task.Dir = filepathext.SmartJoin(mergeOptions.Dir, task.Dir)
-						task.IncludeVars = mergeOptions.Vars
+						if task.IncludeVars == nil {
+							task.IncludeVars = &taskfile.Vars{}
+						}
+						task.IncludeVars.Merge(mergeOptions.Vars)
 						task.IncludedTaskfileVars = vertex.taskfile.Vars
 						task.IncludedTaskfileDir = mergeOptions.Dir
 					}
