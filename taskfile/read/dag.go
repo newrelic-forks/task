@@ -90,16 +90,16 @@ func (dag *TaskfileGraph) Merge() (*taskfile.Taskfile, error) {
 				// Handle advanced imports
 				// i.e. where additional data is given when a Taskfile is included
 				if mergeOptions.AdvancedImport {
-					predecessorVertex.taskfile.Vars.Range(func(k string, v taskfile.Var) error {
+					vertex.taskfile.Vars.Range(func(k string, v taskfile.Var) error {
 						o := v
 						o.Dir = mergeOptions.Dir
-						predecessorVertex.taskfile.Vars.Set(k, o)
+						vertex.taskfile.Vars.Set(k, o)
 						return nil
 					})
-					predecessorVertex.taskfile.Env.Range(func(k string, v taskfile.Var) error {
+					vertex.taskfile.Env.Range(func(k string, v taskfile.Var) error {
 						o := v
 						o.Dir = mergeOptions.Dir
-						predecessorVertex.taskfile.Env.Set(k, o)
+						vertex.taskfile.Env.Set(k, o)
 						return nil
 					})
 					for _, task := range vertex.taskfile.Tasks.Values() {
