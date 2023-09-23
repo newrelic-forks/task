@@ -55,8 +55,17 @@ func (e *Executor) Setup() error {
 }
 
 func (e *Executor) setCurrentDir() error {
-	// If the entrypoint is already set, we don't need to do anything
-	if e.Entrypoint != "" {
+	if e.Entrypoint != "" && e.Dir != "" {
+		return errors.New("cannot set both entrypoint and dir")
+	}
+
+	// Remove the file protocol prefix if it exists
+	e.Entrypoint = strings.TrimPrefix(e.Entrypoint, "file://")
+
+	// If the entrypoint is already set and isn't a remote file
+	if e.Entrypoint != "" && !strings.Contains(e.Entrypoint, "://") {
+		e.Dir = filepath.Dir(e.Entrypoint)
+		e.Entrypoint = filepath.Base(e.Entrypoint)
 		return nil
 	}
 
