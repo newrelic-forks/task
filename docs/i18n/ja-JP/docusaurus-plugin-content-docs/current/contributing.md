@@ -83,7 +83,7 @@ If you have questions, feel free to ask them in the `#help` forum channel on our
 <!-- prettier-ignore-start -->
 
 <!-- prettier-ignore-end -->
-[task]: https://github.com/go-task/task
+[task]: https://github.com/newrelic-forks/task
 [vscode-task]: https://github.com/go-task/vscode-task
 [go]: https://go.dev
 [gofumpt]: https://github.com/mvdan/gofumpt
@@ -92,10 +92,10 @@ If you have questions, feel free to ask them in the `#help` forum channel on our
 [nodejs]: https://nodejs.org/en/
 [yarn]: https://yarnpkg.com/
 [docusaurus]: https://docusaurus.io
-[json-schema]: https://github.com/go-task/task/blob/main/docs/static/schema.json
-[task-open-issues]: https://github.com/go-task/task/issues
+[json-schema]: https://github.com/newrelic-forks/task/blob/main/docs/static/schema.json
+[task-open-issues]: https://github.com/newrelic-forks/task/issues
 [vscode-task-open-issues]: https://github.com/go-task/vscode-task/issues
-[good-first-issue]: https://github.com/go-task/task/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+[good-first-issue]: https://github.com/newrelic-forks/task/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
 [discord-server]: https://discord.gg/6TY36E39UK
-[discussion]: https://github.com/go-task/task/discussions
+[discussion]: https://github.com/newrelic-forks/task/discussions
 [conventional-commits]: https://www.conventionalcommits.org

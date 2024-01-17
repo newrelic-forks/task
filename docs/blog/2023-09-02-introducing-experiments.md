@@ -26,9 +26,9 @@ improve v3 of Task and we've made some amazing progress. Here are just some of
 the things we've released in that time:
 
 - An official [extension for VS Code][vscode-task].
-- Internal Tasks ([#818](https://github.com/go-task/task/pull/818)).
-- Task aliases ([#879](https://github.com/go-task/task/pull/879)).
-- Looping over tasks ([#1220](https://github.com/go-task/task/pull/1200)).
+- Internal Tasks ([#818](https://github.com/newrelic-forks/task/pull/818)).
+- Task aliases ([#879](https://github.com/newrelic-forks/task/pull/879)).
+- Looping over tasks ([#1220](https://github.com/newrelic-forks/task/pull/1200)).
 - A series of refactors to the core codebase to make it more maintainable and
   extensible.
 - Loads of bug fixes and improvements.
@@ -39,7 +39,7 @@ the things we've released in that time:
 
 We're also working on adding some really exciting and highly requested features
 to Task such as having the ability to run remote Taskfiles
-([#1317](https://github.com/go-task/task/issues/1317)).
+([#1317](https://github.com/newrelic-forks/task/issues/1317)).
 
 None of this would have been possible without the [150 or so (and growing)
 contributors][contributors] to the project, numerous sponsors and a passionate
@@ -47,7 +47,7 @@ community of users. Together we have more than doubled the number of GitHub
 stars to over 8400 :star: since the beginning of 2022 and this continues to
 accelerate. We can't thank you all enough for your help and support! :rocket:
 
-[![Star History Chart](https://api.star-history.com/svg?repos=go-task/task&type=Date)](https://star-history.com/#go-task/task&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=newrelic-forks/task&type=Date)](https://star-history.com/#newrelic-forks/task&Date)
 
 ## What's next? :thinking:
 
@@ -125,18 +125,18 @@ to!
 <!-- prettier-ignore-start -->
 [vscode-task]: https://github.com/go-task/vscode-task
 [crowdin]: https://crowdin.com
-[contributors]: https://github.com/go-task/task/graphs/contributors
+[contributors]: https://github.com/newrelic-forks/task/graphs/contributors
 [semver]: https://semver.org
-[breaking-change-proposal]: https://github.com/go-task/task/discussions/1191
+[breaking-change-proposal]: https://github.com/newrelic-forks/task/discussions/1191
 [@andreynering]: https://github.com/andreynering
 [@pd93]: https://github.com/pd93
 [experiments]: https://taskfile.dev/experiments
 [deprecations]: https://taskfile.dev/deprecations
-[deprecate-version-2-schema]: https://github.com/go-task/task/issues/1197
-[issues]: https://github.com/go-task/task/issues
-[discussions]: https://github.com/go-task/task/discussions
+[deprecate-version-2-schema]: https://github.com/newrelic-forks/task/issues/1197
+[issues]: https://github.com/newrelic-forks/task/issues
+[discussions]: https://github.com/newrelic-forks/task/discussions
 [discord]: https://discord.gg/6TY36E39UK
 [experiments-project]: https://github.com/orgs/go-task/projects/1
-[gentle-force-experiment]: https://github.com/go-task/task/issues/1200
-[remote-taskfiles-experiment]: https://github.com/go-task/task/issues/1317
+[gentle-force-experiment]: https://github.com/newrelic-forks/task/issues/1200
+[remote-taskfiles-experiment]: https://github.com/newrelic-forks/task/issues/1317
 <!-- prettier-ignore-end -->

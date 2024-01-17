@@ -53,5 +53,5 @@ By default, Task will timeout requests to download remote files after 10 seconds
 <!-- prettier-ignore-start -->
 
 <!-- prettier-ignore-end -->
-[remote-taskfiles-experiment]: https://github.com/go-task/task/issues/1317
+[remote-taskfiles-experiment]: https://github.com/newrelic-forks/task/issues/1317
 [man-in-the-middle-attacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack

@@ -10,8 +10,8 @@ import (
 	"github.com/fatih/color"
 	"golang.org/x/exp/slices"
 
-	"github.com/go-task/task/v3/errors"
-	"github.com/go-task/task/v3/internal/term"
+	"github.com/newrelic-forks/task/v3/errors"
+	"github.com/newrelic-forks/task/v3/internal/term"
 )
 
 var (

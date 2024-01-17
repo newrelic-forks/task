@@ -667,7 +667,7 @@ it a go and let us know what you think via a
 - Task now have a dedicated documentation site: https://taskfile.org
   - Thanks to [Docsify](https://docsify.js.org/) for making this pretty easy. To
     check the source code, just take a look at the
-    [docs](https://github.com/go-task/task/tree/main/docs) directory of this
+    [docs](https://github.com/newrelic-forks/task/tree/main/docs) directory of this
     repository. Contributions to the documentation is really appreciated.
 
 ## v2.1.1 - 2018-09-17
@@ -689,7 +689,7 @@ it a go and let us know what you think via a
 - Fix YAML merging syntax (#112)
 - Add ZSH completion (#111)
 - Implement new `output` option. Please check out the
-  [documentation](https://github.com/go-task/task#output-syntax)
+  [documentation](https://github.com/newrelic-forks/task#output-syntax)
 
 ## v2.0.2 - 2018-05-01
 
@@ -704,7 +704,7 @@ it a go and let us know what you think via a
 Version 2.0.0 is here, with a new Taskfile format.
 
 Please, make sure to read the
-[Taskfile versions](https://github.com/go-task/task/blob/main/TASKFILE_VERSIONS.md)
+[Taskfile versions](https://github.com/newrelic-forks/task/blob/main/TASKFILE_VERSIONS.md)
 document, since it describes in depth what changed for this version.
 
 - New Taskfile version 2 (#77)

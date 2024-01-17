@@ -8,7 +8,7 @@ draft: true #Hide in production
 
 # {Nom de la fonctionnalité obsolète}
 
-- Issue: [#{issue}](https://github.com/go-task/task/issues/{issue})
+- Issue: [#{issue}](https://github.com/newrelic-forks/task/issues/{issue})
 - Breaks:
   - {lister toutes les fonctionnalités qui vont être brisées par ce changement}
 

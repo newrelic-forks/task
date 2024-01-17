@@ -9,7 +9,7 @@ import (
 
 	"github.com/joho/godotenv"
 
-	"github.com/go-task/task/v3/internal/logger"
+	"github.com/newrelic-forks/task/v3/internal/logger"
 )
 
 const envPrefix = "TASK_X_"

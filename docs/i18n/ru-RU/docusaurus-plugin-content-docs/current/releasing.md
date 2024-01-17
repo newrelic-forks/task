@@ -7,7 +7,7 @@ sidebar_position: 13
 
 Процесс выпуска новой версии Task осуществляется с помощью [GoReleaser][goreleaser]. Вы можете протестировать процесс релиза новой версии локального, вызвав задачу `test-release` в Taskfile.
 
-[GitHub Actions](https://github.com/go-task/task/actions) должны автоматически выпускать артефакты, когда создаётся новый Git-тег в `main` ветке (сырые исполняемые файлы и пакеты DEB и RPM).
+[GitHub Actions](https://github.com/newrelic-forks/task/actions) должны автоматически выпускать артефакты, когда создаётся новый Git-тег в `main` ветке (сырые исполняемые файлы и пакеты DEB и RPM).
 
 Начиная с версии 3.15. сырые, необработанные исполняемые файлы также могут быть воспроизведены и проверены локально путем проверки конкретного тега и вызова `goreleaser build`, используя версию Go, определенную в GitHub Actions.
 
@@ -44,7 +44,7 @@ Nix - это метод установки, принадлежащий сооб�
 [goreleaser]: https://goreleaser.com/
 [homebrewtap]: https://github.com/go-task/homebrew-tap
 [gotaskrb]: https://github.com/go-task/homebrew-tap/blob/main/Formula/go-task.rb
-[packagejson]: https://github.com/go-task/task/blob/main/package.json#L3
+[packagejson]: https://github.com/newrelic-forks/task/blob/main/package.json#L3
 [snappackage]: https://github.com/go-task/snap
 [snapcraftyaml]: https://github.com/go-task/snap/blob/main/snap/snapcraft.yaml#L2
 [snapcraftdashboard]: https://snapcraft.io/task/releases

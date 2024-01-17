@@ -10,8 +10,8 @@ import (
 
 	"github.com/zeebo/xxh3"
 
-	"github.com/go-task/task/v3/internal/filepathext"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // ChecksumChecker validates if a task is up to date by calculating its source

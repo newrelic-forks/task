@@ -10,6 +10,6 @@ Give examples if possible.
 
 Please, search if this wasn't proposed before, and if this is more like an idea
 than a strong feature request, consider opening a
-[discussion](https://github.com/go-task/task/discussions) instead.
+[discussion](https://github.com/newrelic-forks/task/discussions) instead.
 
 -->

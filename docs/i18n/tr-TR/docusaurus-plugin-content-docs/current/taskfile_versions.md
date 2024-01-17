@@ -237,4 +237,4 @@ The variable priority order was also different:
 [output]: usage.md#output-syntax
 [ignore_errors]: usage.md#ignore-errors
 [includes]: usage.md#including-other-taskfiles
-[deprecate-version-2-schema]: https://github.com/go-task/task/issues/1197
+[deprecate-version-2-schema]: https://github.com/newrelic-forks/task/issues/1197

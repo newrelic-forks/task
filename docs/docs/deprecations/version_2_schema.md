@@ -22,5 +22,5 @@ A list of changes between version 2 and version 3 are available in the [Task v3
 Release Notes][version-3-release-notes].
 
 <!-- prettier-ignore-start -->
-[version-3-release-notes]: https://github.com/go-task/task/releases/tag/v3.0.0
+[version-3-release-notes]: https://github.com/newrelic-forks/task/releases/tag/v3.0.0
 <!-- prettier-ignore-end -->

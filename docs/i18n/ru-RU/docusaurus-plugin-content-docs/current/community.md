@@ -28,6 +28,6 @@ We use [Crowdin](https://crowdin.com/project/taskfile) to translate our document
 
 ## Дополнительно
 
-Кроме того, спасибо всем [разработчикам кода](https://github.com/go-task/task/graphs/contributors), [финансовым вкладчикам](https://opencollective.com/task), всем тем, кто [сообщил об ошибках](https://github.com/go-task/task/issues?q=is%3Aissue) и [ответил на вопросы](https://github.com/go-task/task/discussions).
+Кроме того, спасибо всем [разработчикам кода](https://github.com/newrelic-forks/task/graphs/contributors), [финансовым вкладчикам](https://opencollective.com/task), всем тем, кто [сообщил об ошибках](https://github.com/newrelic-forks/task/issues?q=is%3Aissue) и [ответил на вопросы](https://github.com/newrelic-forks/task/discussions).
 
 Если вы знаете что-то, что отсутствует в этом документе, отправьте PR.

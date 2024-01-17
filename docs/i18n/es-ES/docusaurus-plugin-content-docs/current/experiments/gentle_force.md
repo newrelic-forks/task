@@ -18,4 +18,4 @@ If you want to migrate, but continue to force all dependant tasks to run, you sh
 <!-- prettier-ignore-start -->
 
 <!-- prettier-ignore-end -->
-[gentle-force-experiment]: https://github.com/go-task/task/issues/1200
+[gentle-force-experiment]: https://github.com/newrelic-forks/task/issues/1200

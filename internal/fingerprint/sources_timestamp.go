@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // TimestampChecker checks if any source change compared with the generated files,

@@ -237,4 +237,4 @@ echo:
 [output]: usage.md#输出语法
 [ignore_errors]: usage.md#忽略错误
 [includes]: usage.md#包含其他-taskfile
-[deprecate-version-2-schema]: https://github.com/go-task/task/issues/1197
+[deprecate-version-2-schema]: https://github.com/newrelic-forks/task/issues/1197

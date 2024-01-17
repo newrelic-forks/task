@@ -6,9 +6,9 @@ import (
 
 	"github.com/mattn/go-zglob"
 
-	"github.com/go-task/task/v3/internal/execext"
-	"github.com/go-task/task/v3/internal/filepathext"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/internal/execext"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 func Globs(dir string, globs []*taskfile.Glob) ([]string, error) {

@@ -7,7 +7,7 @@ sidebar_position: 10
 
 Ceci est le guide officiel du style Task pour les fichiers `Taskfile.yml`. Ce guide contient quelques instructions de base pour garder votre Taskfile propre et familier à autres utilisateurs.
 
-Il contient des directives générales, mais elles ne doivent pas nécessairement être strictement respectées. N'hésitez pas à procéder différemment si vous en avez le besoin ou que vous le souhaitez. Aussi, n'hésitez pas à [ouvrir une issue](https://github. com/go-task/task/issues/new/choose) ou [faire une pull request](https://github. com/go-task/task/compare) pour améliorer ce guide.
+Il contient des directives générales, mais elles ne doivent pas nécessairement être strictement respectées. N'hésitez pas à procéder différemment si vous en avez le besoin ou que vous le souhaitez. Aussi, n'hésitez pas à [ouvrir une issue](https://github. com/newrelic-forks/task/issues/new/choose) ou [faire une pull request](https://github. com/newrelic-forks/task/compare) pour améliorer ce guide.
 
 ## Utiliser `Taskfile.yml` et non `taskfile.yml`
 

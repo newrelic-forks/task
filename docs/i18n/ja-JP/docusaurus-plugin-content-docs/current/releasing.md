@@ -7,7 +7,7 @@ sidebar_position: 13
 
 Taskのリリースプロセスは[GoReleaser][goreleaser]の助けを借りて行われます。 ローカルでリリースプロセスをテストするには、Taskfileの`test-release`タスクを呼び出します。
 
-[GitHub Actions](https://github.com/go-task/task/actions)は、新しいGitタグが`main`ブランチにプッシュされると、自動的に成果物(実行ファイルおよびDEBとRPMパッケージ)をリリースするはずです。
+[GitHub Actions](https://github.com/newrelic-forks/task/actions)は、新しいGitタグが`main`ブランチにプッシュされると、自動的に成果物(実行ファイルおよびDEBとRPMパッケージ)をリリースするはずです。
 
 v3.15.0以降、特定のタグをチェックアウトし、上記のGitHub Actionsで定義されたGoバージョンを使用して`goreleaser build`を呼び出すことで、実行ファイルをローカルでも再現して検証することができます。
 
@@ -44,7 +44,7 @@ Nixはコミュニティが所有するインストール方法です。 Nixパ�
 [goreleaser]: https://goreleaser.com/
 [homebrewtap]: https://github.com/go-task/homebrew-tap
 [gotaskrb]: https://github.com/go-task/homebrew-tap/blob/main/Formula/go-task.rb
-[packagejson]: https://github.com/go-task/task/blob/main/package.json#L3
+[packagejson]: https://github.com/newrelic-forks/task/blob/main/package.json#L3
 [snappackage]: https://github.com/go-task/snap
 [snapcraftyaml]: https://github.com/go-task/snap/blob/main/snap/snapcraft.yaml#L2
 [snapcraftdashboard]: https://snapcraft.io/task/releases

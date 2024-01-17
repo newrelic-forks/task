@@ -7,7 +7,7 @@ sidebar_position: 13
 
 The release process of Task is done with the help of [GoReleaser][goreleaser]. You can test the release process locally by calling the `test-release` task of the Taskfile.
 
-[GitHub Actions](https://github.com/go-task/task/actions) should release artifacts automatically when a new Git tag is pushed to `main` branch (raw executables and DEB and RPM packages).
+[GitHub Actions](https://github.com/newrelic-forks/task/actions) should release artifacts automatically when a new Git tag is pushed to `main` branch (raw executables and DEB and RPM packages).
 
 Since v3.15.0, raw executables can also be reproduced and verified locally by checking out a specific tag and calling `goreleaser build`, using the Go version defined in the above GitHub Actions.
 
@@ -44,7 +44,7 @@ Nix is a community owned installation method. Nix package maintainers usually ta
 [goreleaser]: https://goreleaser.com/
 [homebrewtap]: https://github.com/go-task/homebrew-tap
 [gotaskrb]: https://github.com/go-task/homebrew-tap/blob/main/Formula/go-task.rb
-[packagejson]: https://github.com/go-task/task/blob/main/package.json#L3
+[packagejson]: https://github.com/newrelic-forks/task/blob/main/package.json#L3
 [snappackage]: https://github.com/go-task/snap
 [snapcraftyaml]: https://github.com/go-task/snap/blob/main/snap/snapcraft.yaml#L2
 [snapcraftdashboard]: https://snapcraft.io/task/releases

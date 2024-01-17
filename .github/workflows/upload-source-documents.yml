@@ -9,7 +9,7 @@ on:
 jobs:
   push_files_to_crowdin:
     name: Push files to Crowdin
-    if: github.repository == 'go-task/task'
+    if: github.repository == 'newrelic-forks/task'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

@@ -3,10 +3,10 @@ package fingerprint
 import (
 	"context"
 
-	"github.com/go-task/task/v3/internal/env"
-	"github.com/go-task/task/v3/internal/execext"
-	"github.com/go-task/task/v3/internal/logger"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/internal/env"
+	"github.com/newrelic-forks/task/v3/internal/execext"
+	"github.com/newrelic-forks/task/v3/internal/logger"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 type StatusChecker struct {

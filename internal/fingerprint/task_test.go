@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/go-task/task/v3/internal/mocks"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/internal/mocks"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // TruthTable

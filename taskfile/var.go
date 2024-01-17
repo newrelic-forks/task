@@ -6,8 +6,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/go-task/task/v3/internal/experiments"
-	"github.com/go-task/task/v3/internal/orderedmap"
+	"github.com/newrelic-forks/task/v3/internal/experiments"
+	"github.com/newrelic-forks/task/v3/internal/orderedmap"
 )
 
 // Vars is a string[string] variables map.

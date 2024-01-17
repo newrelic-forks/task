@@ -76,7 +76,7 @@ Se você estiver no Arch Linux, você pode instalar o Task a partir do [AUR](htt
 yay -S go-task-bin
 ```
 
-Alternativamente, há [este pacote](https://aur.archlinux.org/packages/go-task) que instala do código fonte ao invés de baixar o binário [do GitHub](https://github.com/go-task/task/releases):
+Alternativamente, há [este pacote](https://aur.archlinux.org/packages/go-task) que instala do código fonte ao invés de baixar o binário [do GitHub](https://github.com/newrelic-forks/task/releases):
 
 ```cmd
 yay -S go-task
@@ -170,18 +170,18 @@ This installation method is community owned.
 
 ### Go Modules
 
-Certifique-se de que você tem uma versão suportada do [Go][go] corretamente instalado e configurado. Você pode encontrar a versão mínima necessária do Go no arquivo [go.mod](https://github.com/go-task/task/blob/main/go.mod#L3).
+Certifique-se de que você tem uma versão suportada do [Go][go] corretamente instalado e configurado. Você pode encontrar a versão mínima necessária do Go no arquivo [go.mod](https://github.com/newrelic-forks/task/blob/main/go.mod#L3).
 
 Você pode então instalar a última versão globalmente ao rodar:
 
 ```bash
-go install github.com/go-task/task/v3/cmd/task@latest
+go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 Ou você pode instalar em outro diretório rodando:
 
 ```bash
-env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
+env GOBIN=/bin go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 :::tip
@@ -194,7 +194,7 @@ Para ambientes com CI, recomendamos usar o [script de instalação](#install-scr
 
 Baixe o arquivo de *auto-completion* correspondente ao seu terminal.
 
-[Todos os scripts de *completion* estão disponíveis no repositório do Task](https://github.com/go-task/task/tree/main/completion).
+[Todos os scripts de *completion* estão disponíveis no repositório do Task](https://github.com/newrelic-forks/task/tree/main/completion).
 
 ### Bash
 
@@ -258,8 +258,8 @@ Invoke-Expression -Command path/to/task.ps1
 [go]: https://golang.org/
 [snapcraft]: https://snapcraft.io/task
 [homebrew]: https://brew.sh/
-[installscript]: https://github.com/go-task/task/blob/main/install-task.sh
-[releases]: https://github.com/go-task/task/releases
+[installscript]: https://github.com/newrelic-forks/task/blob/main/install-task.sh
+[releases]: https://github.com/newrelic-forks/task/releases
 [godownloader]: https://github.com/goreleaser/godownloader
 [choco]: https://chocolatey.org/
 [scoop]: https://scoop.sh/

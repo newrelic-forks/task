@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-task/task/v3/internal/execext"
-	"github.com/go-task/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/internal/execext"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
 
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"

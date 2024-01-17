@@ -81,7 +81,7 @@ Uma lista completa dos códigos de saída e suas descrições podem ser encontra
 | 205    | A tarefa foi cancelada pelo usuário                         |
 | 206    | A task was not executed due to missing required variables   |
 
-Esses códigos também podem ser encontrados no repositório em [`errors/errors.go`](https://github.com/go-task/task/blob/main/errors/errors.go).
+Esses códigos também podem ser encontrados no repositório em [`errors/errors.go`](https://github.com/newrelic-forks/task/blob/main/errors/errors.go).
 
 :::info
 

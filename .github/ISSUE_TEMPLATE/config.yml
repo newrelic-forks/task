@@ -7,5 +7,5 @@ contact_links:
     url: https://discord.gg/6TY36E39UK
     about: 'The Discord #help channel is the best way to get help from the community.'
   - name: Questions, Ideas and General Discussions
-    url: https://github.com/go-task/task/discussions
+    url: https://github.com/newrelic-forks/task/discussions
     about: Ask questions and discuss general ideas with the community.

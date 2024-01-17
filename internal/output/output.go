@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // Templater executes a template engine.

@@ -91,7 +91,7 @@ yay -S go-task-bin
 Alternatively, there's
 [this package](https://aur.archlinux.org/packages/go-task) which installs from
 the source code instead of downloading the binary from the
-[releases page](https://github.com/go-task/task/releases):
+[releases page](https://github.com/newrelic-forks/task/releases):
 
 ```cmd
 yay -S go-task
@@ -205,18 +205,18 @@ This installation method is community owned.
 
 Ensure that you have a supported version of [Go][go] properly installed and
 setup. You can find the minimum required version of Go in the
-[go.mod](https://github.com/go-task/task/blob/main/go.mod#L3) file.
+[go.mod](https://github.com/newrelic-forks/task/blob/main/go.mod#L3) file.
 
 You can then install the latest release globally by running:
 
 ```bash
-go install github.com/go-task/task/v3/cmd/task@latest
+go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 Or you can install into another directory:
 
 ```bash
-env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
+env GOBIN=/bin go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 :::tip
@@ -231,7 +231,7 @@ released binary.
 
 Download the autocompletion file corresponding to your shell.
 
-[All completions are available on the Task repository](https://github.com/go-task/task/tree/main/completion).
+[All completions are available on the Task repository](https://github.com/newrelic-forks/task/tree/main/completion).
 
 ### Bash
 
@@ -293,8 +293,8 @@ Invoke-Expression -Command path/to/task.ps1
 [go]: https://golang.org/
 [snapcraft]: https://snapcraft.io/task
 [homebrew]: https://brew.sh/
-[installscript]: https://github.com/go-task/task/blob/main/install-task.sh
-[releases]: https://github.com/go-task/task/releases
+[installscript]: https://github.com/newrelic-forks/task/blob/main/install-task.sh
+[releases]: https://github.com/newrelic-forks/task/releases
 [godownloader]: https://github.com/goreleaser/godownloader
 [choco]: https://chocolatey.org/
 [scoop]: https://scoop.sh/

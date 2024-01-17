@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/go-task/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
 )
 
 // A FileNode is a node that reads a taskfile from the local filesystem.

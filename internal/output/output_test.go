@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/go-task/task/v3/internal/orderedmap"
-	"github.com/go-task/task/v3/internal/output"
-	"github.com/go-task/task/v3/internal/templater"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/internal/orderedmap"
+	"github.com/newrelic-forks/task/v3/internal/output"
+	"github.com/newrelic-forks/task/v3/internal/templater"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 func TestInterleaved(t *testing.T) {

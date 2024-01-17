@@ -7,7 +7,7 @@ sidebar_position: 13
 
 Task 的发布流程是在 [GoReleaser][goreleaser] 的帮助下完成的。 本地调用 Taskfile 的 `test-release` task 可以测试发布流程。
 
-[GitHub Actions](https://github.com/go-task/task/actions) 会在新 tag 推送到 `main` 分支的时候，自动发布产出物（原生的可执行文件、DEB 和 RPM 包）。
+[GitHub Actions](https://github.com/newrelic-forks/task/actions) 会在新 tag 推送到 `main` 分支的时候，自动发布产出物（原生的可执行文件、DEB 和 RPM 包）。
 
 从 v3.15.0 开始，原始可执行文件也可以通过检查特定的标签并调用 `goreleaser build`，使用上述 GitHub Actions 中定义的 Go 版本，在本地进行复制和验证。
 
@@ -44,6 +44,6 @@ Nix 安装由社区维护。 Nix 包的维护人员通常会在 [这个文件](h
 [goreleaser]: https://goreleaser.com/
 [homebrewtap]: https://github.com/go-task/homebrew-tap
 [gotaskrb]: https://github.com/go-task/homebrew-tap/blob/main/Formula/go-task.rb
-[packagejson]: https://github.com/go-task/task/blob/main/package.json#L3
+[packagejson]: https://github.com/newrelic-forks/task/blob/main/package.json#L3
 [snapcraftyaml]: https://github.com/go-task/snap/blob/main/snap/snapcraft.yaml#L2
 [snapcraftdashboard]: https://snapcraft.io/task/releases

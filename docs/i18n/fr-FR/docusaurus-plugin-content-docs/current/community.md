@@ -28,6 +28,6 @@ Certaines méthodes d'installation sont maintenues par un tiers :
 
 ## Plus d’infos
 
-Aussi, merci à tous les [contributeurs](https://github.com/go-task/task/graphs/contributors), [contributeurs financiers](https://opencollective.com/task), tous ceux qui [ont signalé des bugs](https://github.com/go-task/task/issues?q=is%3Aissue) et [ont répondu aux questions](https://github.com/go-task/task/discussions).
+Aussi, merci à tous les [contributeurs](https://github.com/newrelic-forks/task/graphs/contributors), [contributeurs financiers](https://opencollective.com/task), tous ceux qui [ont signalé des bugs](https://github.com/newrelic-forks/task/issues?q=is%3Aissue) et [ont répondu aux questions](https://github.com/newrelic-forks/task/discussions).
 
 Si vous voyez quelque chose qui manque dans ce document, veuillez soumettre une pull request.

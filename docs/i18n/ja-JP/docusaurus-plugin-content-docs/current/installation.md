@@ -76,7 +76,7 @@ Arch Linuxを使っていれば、あなたの好きなパッケージマネー�
 yay -S go-task-bin
 ```
 
-あるいは、[リリースページ](https://github.com/go-task/task/releases)からバイナリをダウンロードする代わりに、ソースコードからインストールする[パッケージ](https://aur.archlinux.org/packages/go-task)もあります：
+あるいは、[リリースページ](https://github.com/newrelic-forks/task/releases)からバイナリをダウンロードする代わりに、ソースコードからインストールする[パッケージ](https://aur.archlinux.org/packages/go-task)もあります：
 
 ```cmd
 yay -S go-task
@@ -170,18 +170,18 @@ GitHub ActionsでTaskをインストールしたい場合、Arduinoチームの[
 
 ### Goモジュール
 
-[Go][go]のサポート対象のバージョンが適切にインストールおよびセットアップされていることを確認してください。 Goの必要な最小バージョンは[go.mod](https://github.com/go-task/task/blob/main/go.mod#L3)ファイルから確認できます。
+[Go][go]のサポート対象のバージョンが適切にインストールおよびセットアップされていることを確認してください。 Goの必要な最小バージョンは[go.mod](https://github.com/newrelic-forks/task/blob/main/go.mod#L3)ファイルから確認できます。
 
 以下を実行することで最新のリリースをグローバルにインストールできます:
 
 ```bash
-go install github.com/go-task/task/v3/cmd/task@latest
+go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 別のディレクトリにインストールすることもできます:
 
 ```bash
-env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
+env GOBIN=/bin go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 :::tip
@@ -194,7 +194,7 @@ CI環境では、最新リリースのバイナリを早く、安定して提供
 
 使用しているシェルに対応した自動補完ファイルをダウンロードしてください。
 
-[シェルに対応した自動補完ファイルはTaskリポジトリにあります](https://github.com/go-task/task/tree/main/completion)。
+[シェルに対応した自動補完ファイルはTaskリポジトリにあります](https://github.com/newrelic-forks/task/tree/main/completion)。
 
 ### Bash
 
@@ -258,8 +258,8 @@ Invoke-Expression -Command path/to/task.ps1
 [go]: https://golang.org/
 [snapcraft]: https://snapcraft.io/task
 [homebrew]: https://brew.sh/
-[installscript]: https://github.com/go-task/task/blob/main/install-task.sh
-[releases]: https://github.com/go-task/task/releases
+[installscript]: https://github.com/newrelic-forks/task/blob/main/install-task.sh
+[releases]: https://github.com/newrelic-forks/task/releases
 [godownloader]: https://github.com/goreleaser/godownloader
 [choco]: https://chocolatey.org/
 [scoop]: https://scoop.sh/

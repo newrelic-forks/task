@@ -7,12 +7,12 @@ import (
 
 	"github.com/joho/godotenv"
 
-	"github.com/go-task/task/v3/errors"
-	"github.com/go-task/task/v3/internal/execext"
-	"github.com/go-task/task/v3/internal/filepathext"
-	"github.com/go-task/task/v3/internal/fingerprint"
-	"github.com/go-task/task/v3/internal/templater"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/errors"
+	"github.com/newrelic-forks/task/v3/internal/execext"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/internal/fingerprint"
+	"github.com/newrelic-forks/task/v3/internal/templater"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // CompiledTask returns a copy of a task, but replacing variables in almost all

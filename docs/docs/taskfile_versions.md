@@ -256,7 +256,7 @@ The variable priority order was also different:
 4. `Taskvars.yml` variables
 
 <!-- prettier-ignore-start -->
-[deprecate-version-2-schema]: https://github.com/go-task/task/issues/1197
+[deprecate-version-2-schema]: https://github.com/newrelic-forks/task/issues/1197
 [output]: /usage#output-syntax
 [ignore_errors]: /usage#ignore-errors
 [includes]: /usage#including-other-taskfiles

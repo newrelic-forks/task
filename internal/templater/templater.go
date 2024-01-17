@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 // Templater is a help struct that allow us to call "replaceX" funcs multiple

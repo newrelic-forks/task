@@ -8,7 +8,7 @@
 
 <!-- prettier-ignore-start -->
 [contributing]: https://taskfile.dev/contributing
-[issues]: https://github.com/go-task/task/issues
-[discussions]: https://github.com/go-task/task/discussions
+[issues]: https://github.com/newrelic-forks/task/issues
+[discussions]: https://github.com/newrelic-forks/task/discussions
 [discord]: https://discord.gg/6TY36E39UK
 <!-- prettier-ignore-end -->

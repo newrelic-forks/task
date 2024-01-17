@@ -10,12 +10,12 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/go-task/task/v3/errors"
-	"github.com/go-task/task/v3/internal/filepathext"
-	"github.com/go-task/task/v3/internal/logger"
-	"github.com/go-task/task/v3/internal/sysinfo"
-	"github.com/go-task/task/v3/internal/templater"
-	"github.com/go-task/task/v3/taskfile"
+	"github.com/newrelic-forks/task/v3/errors"
+	"github.com/newrelic-forks/task/v3/internal/filepathext"
+	"github.com/newrelic-forks/task/v3/internal/logger"
+	"github.com/newrelic-forks/task/v3/internal/sysinfo"
+	"github.com/newrelic-forks/task/v3/internal/templater"
+	"github.com/newrelic-forks/task/v3/taskfile"
 )
 
 var (

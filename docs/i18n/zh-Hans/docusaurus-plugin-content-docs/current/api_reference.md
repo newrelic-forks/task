@@ -81,7 +81,7 @@ Task 有时会以特定的退出代码退出。 These codes are split into three
 | 205 | 操作被用户取消                                                  |
 | 206 | 由于缺少所需变量，任务未执行                                           |
 
-这些代码也可以在代码库的 [`errors/errors.go`](https://github.com/go-task/task/blob/main/errors/errors.go) 文件中找到。
+这些代码也可以在代码库的 [`errors/errors.go`](https://github.com/newrelic-forks/task/blob/main/errors/errors.go) 文件中找到。
 
 :::info
 

@@ -28,6 +28,6 @@ We use [Crowdin](https://crowdin.com/project/taskfile) to translate our document
 
 ## 更多
 
-同时，感谢所有 [代码贡献者](https://github.com/go-task/task/graphs/contributors)， [资金赞助](https://opencollective.com/task)，以及 [提交问题](https://github.com/go-task/task/issues?q=is%3Aissue) 和 [解答问题](https://github.com/go-task/task/discussions) 的人。
+同时，感谢所有 [代码贡献者](https://github.com/newrelic-forks/task/graphs/contributors)， [资金赞助](https://opencollective.com/task)，以及 [提交问题](https://github.com/newrelic-forks/task/issues?q=is%3Aissue) 和 [解答问题](https://github.com/newrelic-forks/task/discussions) 的人。
 
 如果你发现文档有哪些遗漏信息，欢迎提交 PR。

@@ -8,7 +8,7 @@ on:
 jobs:
   sync-translated-documents:
     runs-on: ubuntu-latest
-    if: github.repository == 'go-task/task'
+    if: github.repository == 'newrelic-forks/task'
     steps:
       - uses: actions/checkout@v3
 

@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/go-task/task/v3/errors"
-	"github.com/go-task/task/v3/internal/experiments"
+	"github.com/newrelic-forks/task/v3/errors"
+	"github.com/newrelic-forks/task/v3/internal/experiments"
 )
 
 type Node interface {

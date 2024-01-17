@@ -24,7 +24,7 @@ sidebar_position: 8
 
 ## Схема
 
-Изначально была создана [@KROSF](https://github.com/KROSF) вот тут [this Gist](https://gist.github.com/KROSF/c5435acf590acd632f71bb720f685895) и теперь официально поддерживается в этом [файле](https://github.com/go-task/task/blob/main/docs/static/schema.json) и доступна по ссылке https://taskfile.dev/schema.json. Эта схема может быть использована для проверки Task файлов и автодополнения во многих редакторах кода:
+Изначально была создана [@KROSF](https://github.com/KROSF) вот тут [this Gist](https://gist.github.com/KROSF/c5435acf590acd632f71bb720f685895) и теперь официально поддерживается в этом [файле](https://github.com/newrelic-forks/task/blob/main/docs/static/schema.json) и доступна по ссылке https://taskfile.dev/schema.json. Эта схема может быть использована для проверки Task файлов и автодополнения во многих редакторах кода:
 
 ### Visual Studio Code
 

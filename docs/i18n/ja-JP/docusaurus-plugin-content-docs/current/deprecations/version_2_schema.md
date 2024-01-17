@@ -18,5 +18,5 @@ A list of changes between version 2 and version 3 are available in the [Task v3 
 <!-- prettier-ignore-start -->
 
 <!-- prettier-ignore-end -->
-[deprecate-version-2-schema]: https://github.com/go-task/task/issues/1197
-[version-3-release-notes]: https://github.com/go-task/task/releases/tag/v3.0.0
+[deprecate-version-2-schema]: https://github.com/newrelic-forks/task/issues/1197
+[version-3-release-notes]: https://github.com/newrelic-forks/task/releases/tag/v3.0.0

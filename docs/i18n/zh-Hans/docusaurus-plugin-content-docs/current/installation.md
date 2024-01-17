@@ -76,7 +76,7 @@ This installation method is community owned. 新版 Task 发布后，需要过�
 yay -S go-task-bin
 ```
 
-或者，有一个从源代码安装的 [软件包](https://aur.archlinux.org/packages/go-task)，而不是从 [发布页面](https://github.com/go-task/task/releases) 下载二进制文件：
+或者，有一个从源代码安装的 [软件包](https://aur.archlinux.org/packages/go-task)，而不是从 [发布页面](https://github.com/newrelic-forks/task/releases) 下载二进制文件：
 
 ```cmd
 yay -S go-task
@@ -170,18 +170,18 @@ This installation method is community owned.
 
 ### Go Modules
 
-确保您已正确安装和设置受支持的 [Go][go] 版本。 您可以在 [go.mod](https://github.com/go-task/task/blob/main/go.mod#L3) 文件中找到最低要求的 Go 版本。
+确保您已正确安装和设置受支持的 [Go][go] 版本。 您可以在 [go.mod](https://github.com/newrelic-forks/task/blob/main/go.mod#L3) 文件中找到最低要求的 Go 版本。
 
 然后，您可以通过运行以下命令全局安装最新版本：
 
 ```bash
-go install github.com/go-task/task/v3/cmd/task@latest
+go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 或者你可以安装到另一个目录：
 
 ```bash
-env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
+env GOBIN=/bin go install github.com/newrelic-forks/task/v3/cmd/task@latest
 ```
 
 :::tip
@@ -194,7 +194,7 @@ env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
 
 下载与您的 shell 对应的自动完成文件。
 
-[所有自动完成都在 Task 存储库中可用](https://github.com/go-task/task/tree/main/completion)。
+[所有自动完成都在 Task 存储库中可用](https://github.com/newrelic-forks/task/tree/main/completion)。
 
 ### Bash
 
@@ -257,8 +257,8 @@ Invoke-Expression -Command path/to/task.ps1
 <!-- prettier-ignore-end -->
 [go]: https://golang.org/
 [snapcraft]: https://snapcraft.io/task
-[installscript]: https://github.com/go-task/task/blob/main/install-task.sh
-[releases]: https://github.com/go-task/task/releases
+[installscript]: https://github.com/newrelic-forks/task/blob/main/install-task.sh
+[releases]: https://github.com/newrelic-forks/task/releases
 [choco]: https://chocolatey.org/
 [scoop]: https://scoop.sh/
 [tea]: https://tea.xyz/

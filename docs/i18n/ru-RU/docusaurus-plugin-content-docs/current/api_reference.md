@@ -81,7 +81,7 @@ A full list of the exit codes and their descriptions can be found below:
 | 205  | A task was cancelled by the user                             |
 | 206  | A task was not executed due to missing required variables    |
 
-These codes can also be found in the repository in [`errors/errors.go`](https://github.com/go-task/task/blob/main/errors/errors.go).
+These codes can also be found in the repository in [`errors/errors.go`](https://github.com/newrelic-forks/task/blob/main/errors/errors.go).
 
 :::info
 
